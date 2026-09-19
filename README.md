@@ -25,13 +25,17 @@ dotnet run
 3.Enter the requested inputs (base price, quantity, delivery type, zone, express flag) when prompted.
 
 
-Answers to question
+Answers to questions:
+
 Q1: Which parts of your program handle user input and output?
 Answer: The Main method handles all user I/O operations (reading inputs with Console.ReadLine and outputting results or error messages with Console.WriteLine). Calculation functions are isolated from console operations.
+
 Q2: Which functions perform only delivery price calculations?
 Answer: The functions CalculateTotalPrice, ApplyQuantityRule, ApplyRule, and the delegate variables (applyType, applyZone) perform pure price calculations. They contain no console interaction or global mutable state.
+
 Q3: How is Func<...> used to apply delivery pricing rules?
 Answer: Func<decimal, decimal> represents a rule that accepts a decimal price and returns a transformed decimal price. These rule delegates are passed into the higher-order function ApplyRule to modify the price step-by-step.
+
 Q4: Why is TryParse useful when processing delivery data entered by the user?
 Answer: TryParse converts raw string input into target data types (decimal, int, bool, Enum) without throwing runtime exceptions when the input is malformed. It returns false on failure, allowing the program to handle errors gracefully with early exits.
 
