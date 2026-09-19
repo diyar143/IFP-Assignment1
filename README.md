@@ -1,4 +1,6 @@
 Presented by:Diyar Kabyken IT-2503
+
+
 Runs:
 Regular inputs
 <img width="974" height="274" alt="image" src="https://github.com/user-attachments/assets/f12dadf2-9f47-4ed5-b4be-fd9c9a530f44" />
@@ -9,14 +11,20 @@ Empty input
  <img width="974" height="154" alt="image" src="https://github.com/user-attachments/assets/c5e81dbb-c77a-44e0-9c91-27572c1e538c" />
 Negative input
 <img width="974" height="181" alt="image" src="https://github.com/user-attachments/assets/ba2de4e8-cf45-459c-8b9a-1868ba4945ad" />
+
+
 How to Run
 1.	Open your terminal in VS Code inside the project directory:
 Bash
 cd IFP/FunctionalDeliveryCalculator
+
 2.	Build and run the project:
 Bash
 dotnet run
-3.	Enter the requested inputs (base price, quantity, delivery type, zone, express flag) when prompted.
+
+3.Enter the requested inputs (base price, quantity, delivery type, zone, express flag) when prompted.
+
+
 Answers to question
 Q1: Which parts of your program handle user input and output?
 Answer: The Main method handles all user I/O operations (reading inputs with Console.ReadLine and outputting results or error messages with Console.WriteLine). Calculation functions are isolated from console operations.
